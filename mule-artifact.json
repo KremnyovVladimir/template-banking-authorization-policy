@@ -1,0 +1,19 @@
+{
+ "name": "my-custom-policy-template",
+ "minMuleVersion": "4.0.0",
+ "requiredProduct": "MULE_EE",
+ "classLoaderModelLoaderDescriptor": {
+   "id": "mule",
+   "attributes": {}
+ },
+ "bundleDescriptorLoader": {
+   "id": "mule",
+   "attributes": {
+     "groupId": "your organization id",
+     "artifactId": "template-banking-authorization-policy",
+     "version": "1.3.6",
+     "classifier": "mule-policy",
+     "type": "jar"
+   }
+ }
+}
