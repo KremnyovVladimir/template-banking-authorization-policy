@@ -51,10 +51,6 @@
         <mule:set-payload value='{ "error" : "Policy {{ policyId }}: The Authorization header has invalid format"}' />
     </mule:processor-chain>
 
-    <pointcut>
-        <api-platform-gw:api-pointcut apiName="{{ apiName }}" apiVersion="{{ apiVersionName }}" />
-    </pointcut>
-
     <http-policy:proxy name="policy-deployment">
         <http-policy:source propagateMessageTransformations="true">
 
